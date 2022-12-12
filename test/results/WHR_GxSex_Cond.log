@@ -1,0 +1,45 @@
+*********************************************************************
+* Polygenic gene-environment interaction (PIGEON) 
+* Version 1.0.0 
+* (C) Jiacheng Miao and Yixuan Wu 
+* University of Wisconsin-Madison 
+* https://github.com/qlu-lab/PIGEON 
+* GNU General Public License v3
+*********************************************************************
+
+### Options in effect ### 
+pigeon.py \
+--cond  \
+--out ./test/results/WHR_GxSex \
+--gxe-sumstats ./test/WHR_GxSex_munged.sumstats.gz \
+--gwas-sumstats ./test/BMI_GWAS.sumstats.gz,./test/Anorexia_GWAS.sumstats.gz \
+--e-sd 0.49 \
+--ref-ld-chr ./1kg_ref/LDscore/LDscore. \
+--w-ld-chr ./1kg_ref/weights/weights.hm3_noMHC. 
+
+### Analysis began at Sun Dec 11 20:55:50 2022 ###
+
+### Parse the input data ###
+--- Reading summary statistics from ./test/WHR_GxSex_munged.sumstats.gz
+--- 1186056 SNPs found in the summary statistics
+--- Reading reference panel LD Score from ./1kg_ref/LDscore/LDscore.[1-22] ... (ldscore_fromlist)
+--- 1190321 SNPs found in the reference panel LD Scores.
+--- Reading regression weight LD Score from ./1kg_ref/weights/weights.hm3_noMHC.[1-22] ... (ldscore_fromlist)
+--- 1187349 SNPs found in regression weight LD Scores.
+--- 1172246 SNPs remain after merging with reference panel LD.
+--- 1169317 SNPs remain after merging with regression SNP LD.
+--- Reading summary statistics from ./test/BMI_GWAS.sumstats.gz
+--- 1217311 SNPs found in the summary statistics
+--- 1169317 SNPs remain after merging with summary statistics.
+--- 1008384 SNPs with valid alleles.
+--- Reading summary statistics from ./test/Anorexia_GWAS.sumstats.gz
+--- 1217311 SNPs found in the summary statistics
+--- 1008384 SNPs remain after merging with summary statistics.
+--- 962075 SNPs with valid alleles.
+
+### Performing conditional Oracle PGSxE analysis ###
+
+### Writing out the results ###
+--- The conditional oracle PGSxE results have been writen to ./test/results/WHR_GxSex_Cond.txt
+--- Analysis finished at Sun Dec 11 20:56:13 2022
+--- Total time elapsed: 23.74s

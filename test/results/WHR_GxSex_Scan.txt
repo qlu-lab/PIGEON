@@ -1,0 +1,3 @@
+                        gxe_sumstats                     gwas_sumstats  oPGSxE  oPGSxE_se    oPGSxE_p  covar_gxe  covar_gxe_se  covar_gxe_p  h2_gxe_obs  h2_gxe_obs_se  h2_gxe_obs_p  h2_add_obs  h2_add_obs_se  h2_add_obs_p
+ ./test/WHR_GxSex_munged.sumstats.gz       ./test/BMI_GWAS.sumstats.gz  0.0676     0.0085  1.7962e-15     0.0144        0.0018   1.6853e-15       0.017         0.0021    2.4459e-16      0.1875         0.0069   4.5623e-163
+ ./test/WHR_GxSex_munged.sumstats.gz  ./test/Anorexia_GWAS.sumstats.gz -0.0088     0.0127  4.9094e-01    -0.0016        0.0023   4.9203e-01       0.016         0.0023    1.4047e-12      0.1364         0.0105    6.1747e-39

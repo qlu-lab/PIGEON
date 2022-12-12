@@ -1,0 +1,2 @@
+                        gxe_sumstats  h2_gxe_obs  h2_gxe_obs_se  h2_gxe_obs_p
+ ./test/WHR_GxSex_munged.sumstats.gz      0.0176          0.002    2.7299e-18

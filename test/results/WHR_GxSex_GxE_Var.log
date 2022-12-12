@@ -1,0 +1,42 @@
+*********************************************************************
+* Polygenic gene-environment interaction (PIGEON) 
+* Version 1.0.0 
+* (C) Jiacheng Miao and Yixuan Wu 
+* University of Wisconsin-Madison 
+* https://github.com/qlu-lab/PIGEON 
+* GNU General Public License v3
+*********************************************************************
+
+### Options in effect ### 
+pigeon.py \
+--gxe-var  \
+--out ./test/results/WHR_GxSex \
+--gxe-sumstats ./test/WHR_GxSex_munged.sumstats.gz \
+--ref-ld-chr ./1kg_ref/LDscore/LDscore. \
+--w-ld-chr ./1kg_ref/weights/weights.hm3_noMHC. 
+
+### Analysis began at Sun Dec 11 17:27:59 2022 ###
+
+### Parse the input data ###
+--- Reading summary statistics from ./test/WHR_GxSex_munged.sumstats.gz
+--- 1186056 SNPs found in the summary statistics
+--- Reading reference panel LD Score from ./1kg_ref/LDscore/LDscore.[1-22] ... (ldscore_fromlist)
+--- 1190321 SNPs found in the reference panel LD Scores.
+--- Reading regression weight LD Score from ./1kg_ref/weights/weights.hm3_noMHC.[1-22] ... (ldscore_fromlist)
+--- 1187349 SNPs found in regression weight LD Scores.
+--- 1172246 SNPs remain after merging with reference panel LD.
+--- 1169317 SNPs remain after merging with regression SNP LD.
+
+### Estimating the GxE variance component ###
+
+*** GxE Variance Component ***
+------------------------------
+Observed scale GxE variance component: 0.0176 (0.002)
+Z-score: 8.7221
+P: 2.7299e-18
+Intercept: 1.0597 (0.0087)
+
+### Writing out the results ###
+--- The GxE variance component results have been writen to ./test/results/WHR_GxSex_GxE_Var.txt
+--- Analysis finished at Sun Dec 11 17:28:11 2022
+--- Total time elapsed: 11.3s

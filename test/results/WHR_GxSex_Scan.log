@@ -1,0 +1,95 @@
+*********************************************************************
+* Polygenic gene-environment interaction (PIGEON) 
+* Version 1.0.0 
+* (C) Jiacheng Miao and Yixuan Wu 
+* University of Wisconsin-Madison 
+* https://github.com/qlu-lab/PIGEON 
+* GNU General Public License v3
+*********************************************************************
+
+### Options in effect ### 
+pigeon.py \
+--scan  \
+--out ./test/results/WHR_GxSex \
+--gxe-sumstats ./test/WHR_GxSex_munged.sumstats.gz \
+--gwas-sumstats ./test/BMI_GWAS.sumstats.gz,./test/Anorexia_GWAS.sumstats.gz \
+--e-sd 0.49 \
+--ref-ld-chr ./1kg_ref/LDscore/LDscore. \
+--w-ld-chr ./1kg_ref/weights/weights.hm3_noMHC. 
+
+### Analysis began at Sun Dec 11 20:18:37 2022 ###
+
+### Parse the input data ###
+--- Reading summary statistics from ./test/WHR_GxSex_munged.sumstats.gz
+--- 1186056 SNPs found in the summary statistics
+--- Reading reference panel LD Score from ./1kg_ref/LDscore/LDscore.[1-22] ... (ldscore_fromlist)
+--- 1190321 SNPs found in the reference panel LD Scores.
+--- Reading regression weight LD Score from ./1kg_ref/weights/weights.hm3_noMHC.[1-22] ... (ldscore_fromlist)
+--- 1187349 SNPs found in regression weight LD Scores.
+--- 1172246 SNPs remain after merging with reference panel LD.
+--- 1169317 SNPs remain after merging with regression SNP LD.
+
+### Computing Oracle PGSxE for phenotype 1/2 ###
+--- Reading summary statistics from ./test/BMI_GWAS.sumstats.gz
+--- 1217311 SNPs found in the summary statistics
+--- 1169317 SNPs remain after merging with summary statistics.
+--- 1008384 SNPs with valid alleles.
+
+*** GxE Variance Component ***
+------------------------------
+Observed scale h2: 0.017 (0.0021)
+Z-score: 8.1979
+P: 2.4459e-16
+Intercept: 1.0697 (0.0101)
+
+*** Additive Heritability of phenotype 1/2 ***
+ -----------------------------------------------
+Observed scale h2: 0.1875 (0.0069)
+Z-score: 27.213
+P: 4.5623e-163
+Intercept: 1.1953 (0.0298)
+
+*** Covariant GxE *** 
+----------------------
+Observed scale covariant GxE: 0.0144 (0.0018)
+Z-score: 7.9626
+P: 1.6853e-15
+Intercept: 0.0896 (0.0091)
+
+*** Oracle PGSxE *** 
+---------------------
+Oracle PGSxE: 0.0676 (0.0085)
+Z-score: 7.9547
+P: 1.7962e-15
+
+
+### Computing Oracle PGSxE for phenotype 2/2 ###
+--- Reading summary statistics from ./test/Anorexia_GWAS.sumstats.gz
+--- 1217311 SNPs found in the summary statistics
+--- 1169317 SNPs remain after merging with summary statistics.
+--- 1090593 SNPs with valid alleles.
+
+*** Additive Heritability of phenotype 2/2 ***
+ -----------------------------------------------
+Observed scale h2: 0.1364 (0.0105)
+Z-score: 13.0522
+P: 6.1747e-39
+Intercept: 1.0588 (0.01)
+
+*** Covariant GxE *** 
+----------------------
+Observed scale covariant GxE: -0.0016 (0.0023)
+Z-score: -0.6871
+P: 0.492
+Intercept: 0.0153 (0.0062)
+
+*** Oracle PGSxE *** 
+---------------------
+Oracle PGSxE: -0.0088 (0.0127)
+Z-score: -0.6888
+P: 0.4909
+
+### Writing out the results ###
+--- The oracle PGSxE results have been writen to ./test/results/WHR_GxSex_Scan.txt
+--- Analysis finished at Sun Dec 11 20:18:59 2022
+--- Total time elapsed: 21.62s
