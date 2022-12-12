@@ -2,7 +2,7 @@
 `PIGEON` (**P**olygen**I**c **G**ene-**E**nvironment interacti**ON**) is a Python3-based command line tool for estimating polygenic gene-environment (GxE) interactions using GWIS (and GWAS) summary statistics.
 
 The `PIGEON` software can be used to
-1. estimate the proportion of phenotypic variance explained by genome-wide GxE interactions.
+1. estimate the GxE variance components (proportion of phenotypic variance explained by genome-wide GxE interactions).
 2. perform hypothesis-free scans for PGSxE across many PGS (without the need to calculate PGS).
 
 ![](https://github.com/qlu-lab/PIGEON/blob/main/figure/PIGEON_Fig1.png)
