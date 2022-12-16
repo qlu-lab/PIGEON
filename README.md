@@ -22,6 +22,8 @@ Please see the [wiki](https://github.com/qlu-lab/PIGEON/wiki) for the short tuto
 
 If you use `PIGEON`, please cite 
 
+Miao, J., Song, G., Wu, Y., Hu, J., Wu, Y., Basu, S., Andrews, J. S., Schaumberg, K., Fletcher, J. M., Schmitz, L. L., & Lu, Q. (2022). [Reimagining Gene-Environment Interaction Analysis for Human Complex Traits](https://doi.org/10.1101/2022.12.11.519973 ). bioRxiv, 2022.2012.2011.519973. 
+
 ## Contact
 
 For questions and comments, please open a GitHub issue (preferred) or contact Jiacheng Miao at jmiao24@wisc.edu.
