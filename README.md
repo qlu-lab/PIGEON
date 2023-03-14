@@ -12,7 +12,9 @@ The `PIGEON` software can be used to
 
 `PIGEON` can be downloaded via `git clone https://github.com/qlu-lab/PIGEON`
 
-Please see the [wiki](https://github.com/qlu-lab/PIGEON/wiki) for the short tutorials describing the two basic functions (estimating GxE variance components and hypothesis-free scans for PGSxE), as well as the detailed manual of `PIGEON`.
+Please see the [wiki](https://github.com/qlu-lab/PIGEON/wiki) for the short tutorials describing the two basic functions (estimating GxE variance components and hypothesis-free scans for PGSxE), as well as the detailed manual of `PIGEON`. 
+
+Please see the [FAQ](https://github.com/qlu-lab/PIGEON/wiki/FAQ) for the commonly asked question regrading `PIGEON`. 
 
 ## Version History
 * Dec 12, 2022: Initial release.
