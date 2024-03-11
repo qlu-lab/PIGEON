@@ -558,8 +558,10 @@ def _read_other_sumstats(args, log, p2, sumstats, ref_ld_cnames):
     loop = loop.dropna(how='any')
     alleles = loop.A1 + loop.A2 + loop.A1x + loop.A2x
     if not args.no_check_alleles:
-        loop = _select_and_log(loop, _filter_alleles(alleles), log,
-                               '--- {N} SNPs with valid alleles.')
+        li = _filter_alleles(alleles)
+        loop = _select_and_log(loop, li, log,
+                       '{N} SNPs with valid alleles.')
+        alleles = alleles[li]
         loop['Z2'] = _align_alleles(loop.Z2, alleles)
 
     # loop = loop.drop(['A1', 'A1x', 'A2', 'A2x'], axis=1)
