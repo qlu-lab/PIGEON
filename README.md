@@ -24,7 +24,7 @@ Please see the [FAQ](https://github.com/qlu-lab/PIGEON/wiki/FAQ) for the commonl
 
 If you use `PIGEON`, please cite 
 
-Miao, J., Song, G., Wu, Y., Hu, J., Wu, Y., Basu, S., Andrews, J. S., Schaumberg, K., Fletcher, J. M., Schmitz, L. L., & Lu, Q. (2022). [PIGEON: a statistical framework for estimating gene–environment interaction for polygenic traits](https://www.nature.com/articles/s41562-025-02202-9). Nat Hum Behav (2025). https://doi.org/10.1038/s41562-025-02202-9
+Miao, J., Song, G., Wu, Y., Hu, J., Wu, Y., Basu, S., Andrews, J. S., Schaumberg, K., Fletcher, J. M., Schmitz, L. L., & Lu, Q. (2022). PIGEON: a statistical framework for estimating gene–environment interaction for polygenic traits. Nat Hum Behav (2025). https://doi.org/10.1038/s41562-025-02202-9
 
 ## Contact
 
